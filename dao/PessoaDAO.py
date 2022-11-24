@@ -10,6 +10,7 @@ class PessoaDAO:
 
   def getAll(self, orderByNome = True):
     sql = "SELECT id, nome FROM pessoa "
+  
 
     try:
       self.cursor.execute(sql)
